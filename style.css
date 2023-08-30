@@ -1,0 +1,101 @@
+@font-face { font-family: Montserrat; src: url("Montserrat.ttf"); }
+
+Ctext{
+    text-align: center;
+}
+button {
+    text-align: center
+}
+
+html {
+    background: black;
+}
+
+div {
+    text-align: center
+}
+
+.divbar {
+    background: linear-gradient(to right, #003000 0%, #050505 100%);
+}
+
+.button {
+    border: 5px;
+    color: rgb(255, 255, 255);
+    background-color: #333333;
+    padding: 5px 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    margin: 3px 1px;    
+    cursor: pointer;
+    font: Montserrat;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0), 0 0px 0px 0 rgba(0, 0, 0, 0); 
+}
+
+.button:hover {
+    box-shadow: 0 0px 0px 0 white, 0 0px 10px 0 white;
+    background-color: #00a000;
+    color: white;
+}
+
+.disabled {
+   color: #696969;
+}
+
+.div1 {
+    width: 280px;
+    height: 220px;
+    border: 1px solid rgb(255, 255, 255);
+    border-spacing: 3px;
+    padding: 4px;
+}
+
+.div2 {
+    border: 1px solid rgb(255, 255, 255);
+    border-spacing: 5px;
+    padding: 4px;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+.onload {
+    animation: ease-out;
+}
+
+.onload2 {
+    animation: ease-out;
+}
+
+.onload3 {
+    animation: ease-in;
+}
+
+.onload5 {
+    animation-delay: 2s;
+}
+
+.onload {position:relative;animation:animatetop 0.5s}@keyframes animatetop{from{top:-200px;opacity:0} to{top:0;opacity:1}}
+
+.onload2 {position:relative;animation:animateleft 1s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+
+.onload3 {animation:opac 3s}@keyframes opac{from{opacity:0} to{opacity:1}}
+
+.onload4 {position:relative;animation:animatebottom 1s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+
+.onload6 {position:relative;animation:animateright 1s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+
+
+.glow {
+    color: rgb(70, 70, 70);
+    transition-duration: 0.3s;
+}
+.glow:hover {
+    color: #00a000;
+}
