@@ -166,10 +166,9 @@
           .getElementById("player-mp3-link")
           .setAttribute("href", data.item.preview_url);
 
-        // Hide mp3 link if the song does not provide that
-        if (data.item.preview_url == null) {
+          if (data.item.album.album_type == "single") {
           document
-            .getElementById("player-mp3-link")
+            .getElementById("player-album")
             .setAttribute("style", "display: none;");
         }
 

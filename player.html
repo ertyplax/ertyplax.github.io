@@ -23,7 +23,7 @@
 
         <div
           id="player-album"
-          style="font-size: 1.3em; margin-bottom: 0em"
+          style="font-size: 1.4em; margin-bottom: 0em"
         ></div>
 
         <div
@@ -41,7 +41,7 @@
             border: 1px solid #fff;
             border-radius: 10px;
             padding: 0.2em;
-            margin-right: 0.2em;
+            margin-right: 0.5em;
           "
         >
           🎵 Song
@@ -56,10 +56,10 @@
             border: 1px solid #fff;
             border-radius: 10px;
             padding: 0.2em;
-            margin-right: 0.2em;
+            margin-right: 0.3em;
           "
         >
-          🧑‍🎤 Artist</a
+          🎤 Artist</a
         >
         <a
           id="player-album-link"
@@ -178,10 +178,13 @@
           .getElementById("player-mp3-link")
           .setAttribute("href", data.item.preview_url);
 
-        // Hide mp3 link if the song does not provide that
-        if (data.item.preview_url == null) {
+        if (data.item.album.album_type == "single") {
           document
-            .getElementById("player-mp3-link")
+            .getElementById("player-album")
+            .setAttribute("style", "display: none;");
+            
+            document
+            .getElementById("player-album-link")
             .setAttribute("style", "display: none;");
         }
 
