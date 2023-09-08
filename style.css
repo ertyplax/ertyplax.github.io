@@ -30,14 +30,14 @@ div {
     margin: 3px 1px;    
     cursor: pointer;
     font: Montserrat;
-    border-radius: 5px;
+    border-radius: 10px;
     transition-duration: 0.3s;
     box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0), 0 0px 0px 0 rgba(0, 0, 0, 0); 
 }
 
 .button:hover {
     box-shadow: 0 0px 0px 0 white, 0 0px 10px 0 white;
-    background-color: #00a000;
+    background-color: #009300;
     color: white;
 }
 
@@ -46,8 +46,8 @@ div {
 }
 
 .div1 {
-    width: 280px;
-    height: 220px;
+    width: 200%;
+    height: 15em;
     border: 1px solid rgb(255, 255, 255);
     border-spacing: 3px;
     padding: 4px;
