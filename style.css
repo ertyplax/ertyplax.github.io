@@ -1,22 +1,22 @@
-@font-face { font-family: Montserrat; src: url("Montserrat.ttf"); }
+@font-face {
+    font-family: Montserrat; src: url("Montserrat.ttf");
+}
 
 Ctext{
     text-align: center;
 }
 button {
-    text-align: center
+    text-align: center;
 }
 
 html {
     background: black;
 }
 
-div {
-    text-align: center
-}
 
 .divbar {
     background: linear-gradient(to right, #003000 0%, #050505 100%);
+    text-align: center;
 }
 
 .button {
@@ -36,8 +36,8 @@ div {
 }
 
 .button:hover {
-    box-shadow: 0 0px 0px 0 white, 0 0px 10px 0 white;
-    background-color: #009300;
+    box-shadow: 0 0px 0px 0 white, 0 0px 15px 0 white;
+    background-color: #FF1493;
     color: white;
 }
 
@@ -45,12 +45,25 @@ div {
    color: #696969;
 }
 
+.disabled:hover {
+    color: #696969;
+    background-color: #333333;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0), 0 0px 0px 0 rgba(0, 0, 0, 0); 
+}
+
 .div1 {
+    text-align: center;
+    background-color: #070707;
+    color: white;
     width: 200%;
     height: 15em;
     border: 1px solid rgb(255, 255, 255);
     border-spacing: 3px;
     padding: 4px;
+    transition-duration: 0.4s;
+}
+.div1:hover {
+    background-color: #101010;
 }
 
 .div2 {
@@ -60,6 +73,7 @@ div {
 }
 
 .center {
+    text-align: center;
     margin: auto;
     width: 50%;
     padding: 10px;

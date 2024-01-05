@@ -101,7 +101,7 @@
             style="
               background-color: #eee;
               border: 0.1em solid transparent;
-              height: 0.80em;
+              height: 0.90em;
               border-radius: 10px;
               transition: width 0.2s;
             "
@@ -143,6 +143,19 @@
             "player-song"
           ).innerHTML = `${spotifyUser} isn't playing anything.`;
           document.getElementById("player-artist").innerHTML = "  ";
+
+          document
+          .getElementById("player-album-link")
+          .setAttribute("style", "display: none;");
+
+          document
+          .getElementById("player-artist-link")
+          .setAttribute("style", "display: none;");
+
+          document
+          .getElementById("player-song-link")
+          .setAttribute("style", "display: none;");
+
           return;
         }
         songData = data;
