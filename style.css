@@ -15,7 +15,7 @@ html {
 
 
 .divbar {
-    background: linear-gradient(to right, #003000 0%, #050505 100%);
+    background: linear-gradient(to right, #006000 10%, #050505 100%);
     text-align: center;
 }
 
@@ -26,7 +26,7 @@ html {
     padding: 5px 25px;
     text-decoration: none;
     display: inline-block;
-    font-size: 13px;
+    font-size: 14px;
     margin: 3px 1px;    
     cursor: pointer;
     font: Montserrat;
@@ -57,7 +57,7 @@ html {
     color: white;
     width: 200%;
     height: 15em;
-    border: 1px solid rgb(255, 255, 255);
+    border: 3px solid rgb(255, 255, 255);
     border-spacing: 3px;
     padding: 4px;
     transition-duration: 0.4s;
@@ -67,7 +67,7 @@ html {
 }
 
 .div2 {
-    border: 1px solid rgb(255, 255, 255);
+    border: 2px solid rgb(255, 255, 255);
     border-spacing: 5px;
     padding: 4px;
 }
